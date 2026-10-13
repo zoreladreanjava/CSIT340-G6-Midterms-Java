@@ -6,7 +6,8 @@ function PlanCard({ name, price, storage, support, seats, months }) {
           <div className="p-8">
             <h3 className="text-3xl font-bold">{name}</h3>
             <p className="mt-2 text-xl">PHP {price} per seat each month</p>
-            <Feature storage={storage} support={support} />
+            <Feature text={storage} />
+            <Feature text={support} />
           </div>
           <p className="bg-[#000000] px-8 py-5 text-3xl font-bold text-[#EEEEEE]">
             Total: PHP {price * seats * months}
